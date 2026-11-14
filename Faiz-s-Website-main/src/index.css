@@ -1,0 +1,156 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: 'Outfit', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0d9488;
+}
+
+/* Print Media Query: Optimizes portfolio layout for physical printing & PDF generation */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 14mm 12mm 14mm 12mm;
+  }
+
+  /* Force clean white background and high-contrast typography */
+  *,
+  *::before,
+  *::after {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 10.5pt !important;
+    line-height: 1.45 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide interactive, floating, and navigational elements */
+  header,
+  footer,
+  nav,
+  aside,
+  [role="dialog"],
+  [aria-label="Quick Actions"],
+  [aria-label="Scroll progress"],
+  .fixed,
+  button,
+  .no-print {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    pointer-events: none !important;
+  }
+
+  /* Main layout reset */
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  section {
+    padding-top: 1rem !important;
+    padding-bottom: 1.25rem !important;
+    margin: 0 !important;
+  }
+
+  /* Avoid awkward page breaks inside cards, certifications, and timeline items */
+  article,
+  .rounded-3xl,
+  .rounded-2xl,
+  .p-5,
+  .p-6,
+  .p-7,
+  .grid > div {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    border: 1px solid #cbd5e1 !important;
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+  }
+
+  /* Headings shouldn't be orphaned at the bottom of a page */
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: #0f172a !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  /* Ensure images print sharply without overflow */
+  img,
+  svg {
+    max-width: 100% !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Ensure text colors are readable on white paper */
+  .text-slate-600,
+  .text-slate-500,
+  .text-slate-400,
+  .text-slate-300,
+  .dark\:text-slate-300,
+  .dark\:text-slate-400 {
+    color: #334155 !important;
+  }
+
+  .text-slate-900,
+  .text-slate-800,
+  .text-white,
+  .dark\:text-white {
+    color: #0f172a !important;
+  }
+
+  .text-teal-600,
+  .text-teal-500,
+  .text-teal-400,
+  .dark\:text-teal-400 {
+    color: #0f766e !important;
+  }
+}
+

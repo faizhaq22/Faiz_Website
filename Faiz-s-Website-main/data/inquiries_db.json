@@ -1,0 +1,35 @@
+[
+  {
+    "id": "inq-1794485858141-2clgx",
+    "name": "Recruiter Verification",
+    "email": "recruiter@example.com",
+    "subject": "Interview Inquiry",
+    "category": "Full-time / Hiring Opportunity",
+    "message": "Hello Faiz, we are interested in discussing opportunities.",
+    "createdAt": "2026-11-12T12:17:38.141Z",
+    "status": "notified",
+    "emailSentTo": "fnimatulhaq@gmail.com"
+  },
+  {
+    "id": "inq-1794297495746-4zt9y",
+    "name": "Evaluator Test",
+    "email": "test@example.com",
+    "subject": "Test Inquiry",
+    "category": "Data Analytics Project",
+    "message": "Testing message persistence",
+    "createdAt": "2026-11-10T07:58:15.746Z",
+    "status": "notified",
+    "emailSentTo": "fnimatulhaq@gmail.com"
+  },
+  {
+    "id": "inq-initial-001",
+    "name": "Sarah Pratama",
+    "email": "sarah.pratama@techinnovasi.id",
+    "subject": "Power BI Executive Dashboard Consultation",
+    "category": "Data Analytics Project",
+    "message": "Hi Faiz, we were impressed by your PL-300 certification and awards. We would love to discuss a business intelligence consultation for our supply chain reporting.",
+    "createdAt": "2026-11-08T07:58:10.726Z",
+    "status": "notified",
+    "emailSentTo": "fnimatulhaq@gmail.com"
+  }
+]

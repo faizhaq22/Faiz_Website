@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="100%" height="100%">
+  <defs>
+    <linearGradient id="awardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488" />
+      <stop offset="60%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#115e59" />
+    </linearGradient>
+    <linearGradient id="medalGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14b8a6" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+  </defs>
+
+  <!-- Card Base -->
+  <rect width="400" height="250" rx="20" fill="url(#awardBg)" stroke="#14b8a6" stroke-opacity="0.3" stroke-width="2"/>
+  <rect x="12" y="12" width="376" height="226" rx="14" fill="none" stroke="#14b8a6" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="8,4"/>
+
+  <!-- Top Ribbon Header -->
+  <g transform="translate(25, 24)">
+    <rect width="135" height="26" rx="13" fill="#14b8a6" fill-opacity="0.18" stroke="#14b8a6" stroke-width="1.2"/>
+    <text x="67" y="17" fill="#14b8a6" font-size="10.5" font-weight="800" font-family="system-ui, sans-serif" text-anchor="middle" letter-spacing="1">NATIONAL HONOR</text>
+  </g>
+
+  <!-- Year pill -->
+  <g transform="translate(305, 24)">
+    <rect width="70" height="26" rx="13" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="35" y="17" fill="#f8fafc" font-size="11" font-weight="700" font-family="system-ui, monospace" text-anchor="middle">2021</text>
+  </g>
+
+  <!-- Medal Emblem Circle -->
+  <g transform="translate(25, 75)">
+    <circle cx="36" cy="36" r="34" fill="rgba(255,255,255,0.06)" stroke="#14b8a6" stroke-opacity="0.4" stroke-width="1.5" />
+    <circle cx="36" cy="36" r="28" fill="#14b8a6" fill-opacity="0.2" />
+    <text x="36" y="47" font-size="30" text-anchor="middle" fill="#fff">⭐</text>
+  </g>
+
+  <!-- Award Information -->
+  <text x="110" y="96" fill="#ffffff" font-size="14.5" font-weight="800" font-family="system-ui, sans-serif">
+    <tspan x="110" dy="0">Best Team · Khatulistiwa 5</tspan>
+    <tspan x="110" dy="21" font-size="11.5" font-weight="600" fill="#cbd5e1">Universitas Brawijaya</tspan>
+    <tspan x="110" dy="18" font-size="10.5" font-weight="500" fill="#94a3b8">Faiz Ni'matul Haq · Universitas Brawijaya</tspan>
+  </text>
+
+  <!-- Security Certification footer -->
+  <line x1="25" y1="188" x2="375" y2="188" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
+  <text x="25" y="214" fill="#94a3b8" font-size="9.5" font-family="system-ui, sans-serif" letter-spacing="0.5">NATIONAL COMPETITION DIPLOMA</text>
+  <text x="375" y="214" fill="#14b8a6" font-size="10" font-family="monospace" text-anchor="end" font-weight="700">CERTIFIED ACHIEVEMENT</text>
+</svg>
